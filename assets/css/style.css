@@ -292,14 +292,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/hero.jpg") top center;
   background-size: cover;
   position: relative;
   border-bottom: 1px solid #222;
 }
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(0 0 0 / 22%);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -740,4 +740,370 @@ section {
   float: right;
   text-align: center;
   font-size: 13px;
+}
+
+/**Nosotros*/
+
+/***contenedor*/
+.contenedor{
+  width: 100%;
+  height: 90vh;
+  padding: 0;
+}
+
+.img-nosotros{
+	width : 100%;
+  height: 100%;
+	background: url(../img/about.jpg);
+	background-position: center;
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imagen-contenedor-nosotros{
+  width: 50%;
+  height: 100%;
+}
+
+.separador-m-v{
+  margin-top: 80px;
+}
+
+.iconos-nosotros i{
+  font-size: 50px;
+  color: #1f639b;
+  cursor: pointer;
+}
+
+.cont-mision{
+  width: 50%;
+}
+
+.cont-vision{
+  width: 50%;
+}
+
+.s-nosotros{
+  width: 100%;
+}
+
+.cont-nosotros{
+  width: 50%;
+}
+
+.s-nosotros p{
+  margin-top: 40px;
+  color: #000;
+}
+
+.cont-mision p{
+  margin-top: 20px;
+  color: #000;
+}
+
+.cont-vision p{
+  margin-top: 20px;
+  color: #000;
+}
+
+.s-nosotros h2{
+  color: #1f639b;
+  font-weight: bold;
+}
+
+.cont-mision h2{
+  color: #1f639b;
+  font-weight: bold;
+}
+
+.cont-vision h2{
+  color: #1f639b;
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 991px) and (min-width: 200px){
+  .cont-nosotros{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .imagen-contenedor-nosotros{
+    width: 100%;
+  }
+
+  .cont-mision{
+    width: 100%;
+  }
+
+  .cont-vision{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .contenedor{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .imagen-contenedor-nosotros{
+    width: 100%;
+    height: 100%;
+  }
+
+  .separador-m-v{
+    margin-top: 30px;
+  }
+
+  .s-nosotros p{
+    margin-top: 20px;
+  }
+
+  .cont-mision p{
+    margin-top: 10px;
+  }
+
+  .cont-vision p{
+    margin-top: 10px;
+  }
+
+  .cont-vision h2 , .cont-mision h2{
+    text-align: center;
+  }
+  
+}
+
+/*¿Quienes somos?*/
+
+.quienes-somos{
+  width: 100%;
+  height: 91vh;
+  padding: 0;
+}
+
+.hector-nosotros{
+  width: 50%;
+  background-color: #1f639b;
+}
+
+.hector-nosotros h1{
+  padding: 10px;
+  background-color: white;
+  width: 50%;
+  text-align: end;
+  margin-bottom: 10%;
+  color:#1f639b;
+  font-weight: bold;
+}
+
+.contenedor-sobre-nosotros{
+  width: 50%;
+}
+
+.contenedor-sobre-nosotros h1{
+  color: #1f639b;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.contenedor-sobre-nosotros h2{
+  color: #1f639b;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.contenedor-sobre-nosotros p{
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) and (min-width:300px ) {
+  .quienes-somos{
+    height: 100%;
+  }
+
+  .hector-nosotros{
+    width: 100%;
+    background-color: #1f639b;
+    height: 20vh;
+  }
+  .contenedor-sobre-nosotros{
+    width: 100%;
+    height: 70vh;
+  }
+
+  .hector-nosotros h1{
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+}
+
+/***Servicios carosuel***/
+
+.carousel-item-cont{
+  height: 100vh;
+  background:#777;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.cont-item-carousel{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 20%;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.iconos-n-servicios{
+ width: 50%;
+ margin: auto;
+}
+
+.iconos-n-servicios img{
+  width: 250px;
+  padding: 20px;
+}
+
+.servicios-n p{
+  width: 60%;
+  text-align: center;
+}
+
+.servicio-eletricidad{
+  width: 50%;
+}
+
+.servicio-eletricidad h3{
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.servicio-instalacion{
+  width: 50%;
+} 
+
+.servicio-instalacion h3{
+  text-align: center;
+  font-size: 20px;
+} 
+
+/*ELectricidad*/
+
+.cont-item-carousel-electricidad{
+  position: absolute;
+  left: 47%;
+  right: 0;
+  top: 0;
+  width: 33%;
+}
+
+.elect-serv{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px 0px;
+}
+
+.elect-serv h3{
+  width: 100%;
+  text-align: center;
+}
+
+.elect-serv ul{
+  width: 100%;
+  list-style: none;
+}
+
+.elect-serv li{
+  padding: 10px;
+}
+
+/*Bombas de agua*/
+
+.cont-item-carousel-bombas-a{
+  position: absolute;
+  left: 40%;
+  right: 0;
+  top: 0;
+  width: 40%;
+}
+
+.bombas-a{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px 0px;
+}
+
+.bombas-a h3{
+  width: 100%;
+  text-align: center;
+}
+
+.bombas-a ul{
+  width: 100%;
+  list-style: none;
+}
+
+.bombas-a li{
+  padding: 10px;
+}
+
+@media screen and (max-width:991px) and (min-width:300px){
+  .iconos-n-servicios img{
+    color: white;
+    width: 150px;  
+    padding: 10px;
+  }
+
+  .servicios-n p{
+    width: 90%;
+    text-align: initial;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .servicio-eletricidad h3{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .servicio-instalacion h3{
+    text-align: center;
+    font-size: 15px;
+  } 
+
+  .iconos-n-servicios{
+    width: 100%;
+    margin: auto;
+   }
+
+   .cont-item-carousel-bombas-a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 80%;
+  }  
+
+  .cont-item-carousel-electricidad{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 80%;
+  }
+  
 }

@@ -19,6 +19,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 
 <body>
@@ -52,7 +54,7 @@
             <h1 class="text-light">
               <a href="index.html">
                 <span>ELECTROBOMBAS</span><br>
-                <span style="color: rgb(70 115 189);font-size: 35px;">MONTERO</span>
+                <span>MONTERO</span>
               </a>
             </h1>
           </div>
@@ -69,9 +71,81 @@
         </div>
     </header>
 
-    <main id="main">
+    <main id="main" class="animate__animated animate__fadeIn animate__slow">
 
+      <br><div id="mycarosuel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mycarosuel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#mycarosuel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#mycarosuel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-item-cont" style="background-image: url('./assets/img/img5.jpg');">
+            <div class="container cont-item-carousel">
+              <div class="d-flex flex-column">
+                <div class="d-flex flex-column justify-content-center align-items-center servicios-n">
+                  <h2>NUESTROS SERVICIOS</h2>
+                  <p>Comprometidos total con nuestros clientes. Si tienes un proyecto en casa o Empresa y
+                    necesitas personal de confianza, puntuales y con mucho conocimiento en estos rubros,
+                    puede contar con nosotros.</p>
+                </div>
+                <div class="iconos-n-servicios d-flex flex-row justify-content-between align-items-center">
+                  <div class="servicio-eletricidad d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/img/ELECTRICIDADRecurso 5.png" alt="">
+                    <h3>ELECTRICIDAD</h3>
+                  </div>
+                  <div class="servicio-instalacion d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/img/BOMBARecurso 6.png" alt="">
+                    <h3>INSTALACIÓN DE BOMBAS DE AGUA</h3>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-cont" style="background-image: url('./assets/img/img3.jpg');">
+            <div class=" container cont-item-carousel-electricidad">
+              <div class="d-flex flex-column elect-serv">
+                  <h3>ELECTRICIDAD</h3>
+                  <ul>
+                    <li><i class="bi bi-check-lg"></i>  Instalación de luminarias e intercomunicadores</li>
+                    <li><i class="bi bi-check-lg"></i>  Cortocircuito, tablero eléctrico y más</li>
+                    <li><i class="bi bi-check-lg"></i>  Mantenimiento de cableado eléctrico</li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-cont" style="background-image: url('./assets/img/img2.jpg');">
+            <div class="container cont-item-carousel-bombas-a">
+              <div class="d-flex flex-column bombas-a">
+                <h3>INSTALACIÓN DE BOMBAS DE AGUA</h3>
+                <ul>
+                  <li><i class="bi bi-check-lg"></i>  Instalación</li>
+                  <li><i class="bi bi-check-lg"></i>  Reparación</li>
+                  <li><i class="bi bi-check-lg"></i>  Mantenimiento preventivo y correctivo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img src="./assets/img/hero-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div> -->
 
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mycarosuel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mycarosuel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
     </main>
 
     <footer id="footer">
@@ -138,6 +212,8 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <script src="assets/js/main.js"></script>
 
 </body>
