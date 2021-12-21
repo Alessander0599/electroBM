@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 2px;
   display: inline-block;
   padding: 10px 28px;
-  border-radius: 5px;
+  border-radius: 30px;
   transition: 0.5s;
   border: 2px solid #3f7fb3d4;
   color: #fff;
@@ -497,14 +497,16 @@ section {
   margin: 0 0 0 68px;
 }
 .contact .info-contact{
+  border-radius: 15px;
   padding-top: 80px;
   font-family: 'Raleway';
   background: #1f639b;
   color: white;
 }
 .contact .formulario-contact{
-border-radius: 15px;
-box-shadow: 3px 2px 11px rgb(128 130 133);
+  font-family: 'Raleway';
+  border-radius: 15px;
+  box-shadow: 3px 2px 11px rgb(128 130 133);
 }
 
 

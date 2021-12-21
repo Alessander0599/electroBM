@@ -19,6 +19,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
 
 <body>
@@ -53,7 +55,7 @@
             <h1 class="text-light">
               <a href="index.html">
                 <span>ELECTROBOMBAS</span><br>
-                <span>MONTERO</span>
+                <span style="color: rgb(70 115 189);font-size: 35px;">MONTERO</span>
               </a>
             </h1>
           </div>
@@ -68,18 +70,16 @@
           </nav>
   
         </div>
-      </header>
+    </header>
 
     <main id="main">
 
       <section id="contact" class="contact">
         <div class="container">
-
           <div class="section-title" data-aos="fade-down">
             <span>Contacto</span>
             <h2>Contacto</h2>
           </div>
-
           <div class="row justify-content-center">
             <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="100">
               <div class="info-box">
@@ -104,7 +104,7 @@
             </div>
           </div>
 
-          <form class="php-email-form mt-4" data-aos="fade-up" data-aos-delay="400">
+          <form class="php-email-form mt-4" id="Formulario" data-aos="fade-up" data-aos-delay="400">
             <div class="row">
                 <div class="info-contact col-md-6">
                   <p style="font-weight: bold;font-size: 30px;">¿NECESITAS CONTRATAR
@@ -112,28 +112,43 @@
                   </p>
                   <p>Si desea más información sobre nuestros
                     servicios solicítalo a los teléfonos.</p><br>
-
                   <p>Llamanos al: *********</p>
-
                 </div>
                 <div class="formulario-contact col-md-6">
                   <p style="font-weight: bold;font-size: x-large;text-align: center;">¡Contáctanos Hoy!</p>
                   <p style="font-size: 14px;font-family: 'Raleway';">Nuestros especialistas te brindarán mayor información</p>
                   <div class="row">
                     <div class="col-md-6 form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                      <input type="text" maxlength="50" class="form-control" id="name" placeholder="Nombre" required>
                     </div>
                     <div class="col-md-6 form-group mt-3 mt-md-0">
                       <input type="text" maxlength="9" class="form-control"  id="phone" placeholder="Telefono" required>
                     </div>
                   </div>
                   <div class="form-group mt-3">
-                    <input type="email" class="form-control"  id="email" placeholder="Correo" required>
+                    <input type="email" maxlength="50" class="form-control"  id="email" placeholder="Correo" required>
                   </div>
                   <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Déjanos tu consulta" required></textarea>
                   </div>
-                  <div class="text-center" style="padding-top: 10px;"><button type="submit">Enviar</button></div>
+                  <p style="font-size: 14px;">¿Por qué medio preferiría que lo contactemos?  </p>      
+                        <div style="display: flex;font-size: 14px;">     
+                          <div >
+                            <input  type="radio"  id="wsp">
+                            <label  >Whatsapp</label>
+                          </div>
+                          <div  style="padding-left: 15px;">
+                            <input  type="radio"  id="mail" checked>
+                            <label  >Correo</label>
+                          </div>
+                          <div  style="padding-left: 15px;">
+                            <input  type="radio" id="phone">
+                            <label  >Llamada</label>
+                          </div>         
+                        </div><br> 
+                  <div class="text-center">
+                    <button type="submit" id="save">Enviar</button>
+                  </div>
               </div>
             </div>
           </form>
@@ -202,6 +217,9 @@
   </div>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script src="assets/js/Formulario.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
