@@ -746,7 +746,7 @@ section {
 /***contenedor*/
 .contenedor{
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   padding: 0;
 }
 
@@ -765,6 +765,7 @@ section {
 }
 
 .separador-m-v{
+  text-align: justify;
   margin-top: 80px;
 }
 
@@ -775,10 +776,12 @@ section {
 }
 
 .cont-mision{
+  margin: 10px;
   width: 50%;
 }
 
 .cont-vision{
+  margin: 10px;
   width: 50%;
 }
 
