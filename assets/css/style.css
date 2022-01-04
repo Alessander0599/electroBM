@@ -291,14 +291,14 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 86vh;
-  background: url("../img/hero.jpg") top center;
+  background: url("../img/2.jpg") top center;
   background-size: cover;
   position: relative;
   border-bottom: 1px solid #222;
 }
 #hero:before {
   content: "";
-  background: rgb(0 0 0 / 22%);
+  background: rgb(0 0 0 / 50%); 
   position: absolute;
   bottom: 0;
   top: 0;
